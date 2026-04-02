@@ -8,9 +8,9 @@
       <div class="main-content">
         <!-- Page Header -->
         <div class="page-header">
-          <div class="header-content">
-            
+          <div class="header-content"> 
             <div class="header-text">
+              <h1>PROYECTO: NOMBRE DEL PROYECTO</h1>
               <h1>Dashboard</h1>
               <p>Resumen general del sistema</p>
             </div>

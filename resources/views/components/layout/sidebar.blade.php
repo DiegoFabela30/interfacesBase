@@ -82,7 +82,7 @@
             <span class="nav-text">Mi Perfil</span>
           </a>
           <a
-            href="login.html"
+            href="{{ route('login') }}"
             class="nav-item logout"
             data-tooltip="Cerrar sesión"
           >

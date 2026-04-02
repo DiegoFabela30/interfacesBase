@@ -1,0 +1,86 @@
+/*
+==========================================================================
+G.A.M.A Solutions - Footer Styles
+Estilos modulares para el footer institucional
+==========================================================================
+*/
+
+/* ========================================
+   Dashboard Footer
+======================================== */
+.dashboard-footer {
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    text-align: center;
+    padding: 24px;
+    color: var(--soft-steel);
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px solid var(--mist-blue);
+}
+
+.institutional-footer {
+    background-color: var(--deep-blue);
+    color: white;
+    border-top: 1px solid var(--royal-blue);
+}
+
+.institutional-footer .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.institutional-footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.institutional-footer .footer-links a {
+    color: #ffffff;
+    text-decoration: underline;
+    opacity: 0.9;
+    transition: opacity 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.institutional-footer .footer-links a:hover {
+    opacity: 1;
+    color: var(--corp-orange);
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.institutional-footer .footer-links a:active {
+    color: var(--deep-orange);
+    transform: translateY(0);
+}
+
+.institutional-footer .footer-link-separator {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ========================================
+   Responsive
+======================================== */
+@media (max-width: 1024px) {
+    .dashboard-footer {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .institutional-footer .footer-content {
+        padding: 0 12px;
+    }
+    .institutional-footer .footer-links {
+        flex-direction: column;
+    }
+    .institutional-footer .footer-link-separator {
+        display: none;
+    }
+}

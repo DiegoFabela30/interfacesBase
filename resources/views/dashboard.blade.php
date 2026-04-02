@@ -1,124 +1,19 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - G.A.M.A Solutions</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="{{ asset('css/gama-dashboard.css') }}">
-  </head>
-  <body>
-    <div class="dashboard">
-      <!-- Mobile Menu Toggle -->
-      <button class="mobile-menu-toggle" id="mobileMenuToggle">
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
+@extends('layouts.app')
 
-      <!-- Sidebar Overlay -->
-      <div class="sidebar-overlay" id="sidebarOverlay"></div>
+@section('title', 'Dashboard - GAMA Solutions')
 
-      <!-- Sidebar -->
-      <aside class="sidebar" id="sidebar">
-        <!-- Brand Header -->
-        <div class="sidebar-brand">
-          <div class="logo-icon">
-            <img src="{{ asset('img/gama-logo.png') }}" alt="G.A.M.A Solutions">
-          </div>
-        </div>
-
-        <!-- User Info -->
-        <div class="sidebar-user">
-          <div class="user-avatar">US</div>
-          <div class="user-info">
-            <span class="user-name">Usuario name</span>
-            <span class="user-role">Administrador</span>
-          </div>
-        </div>
-
-        <!-- Navigation -->
-        <nav class="sidebar-nav">
-          <!-- Principal -->
-          <div class="nav-section">
-            <span class="nav-label">Principal</span>
-            <a href="#" class="nav-item active" data-tooltip="Dashboard">
-              <i class="fas fa-home nav-icon"></i>
-              <span class="nav-text">Dashboard</span>
-            </a>
-          </div>
-
-          <!-- Módulos -->
-          <div class="nav-section">
-            <span class="nav-label">Módulos</span>
-            <a href="#" class="nav-item" data-tooltip="Reportes">
-              <i class="fas fa-chart-bar nav-icon"></i>
-              <span class="nav-text">Reportes</span>
-            </a>
-            <a href="#" class="nav-item" data-tooltip="Usuarios">
-              <i class="fas fa-users nav-icon"></i>
-              <span class="nav-text">Usuarios</span>
-              <span class="badge">3</span>
-            </a>
-            <a href="#" class="nav-item" data-tooltip="Campo Genérico 1">
-              <i class="fas fa-layer-group nav-icon"></i>
-              <span class="nav-text">Campo Genérico 1</span>
-            </a>
-            <a href="#" class="nav-item" data-tooltip="Campo Genérico 2">
-              <i class="fas fa-layer-group nav-icon"></i>
-              <span class="nav-text">Campo Genérico 2</span>
-            </a>
-            <a href="#" class="nav-item" data-tooltip="Campo Genérico 3">
-              <i class="fas fa-layer-group nav-icon"></i>
-              <span class="nav-text">Campo Genérico 3</span>
-            </a>
-          </div>
-
-          <!-- Configuración -->
-          <div class="nav-section">
-            <span class="nav-label">Configuración</span>
-            <a href="#" class="nav-item" data-tooltip="Ajustes">
-              <i class="fas fa-cog nav-icon"></i>
-              <span class="nav-text">Ajustes</span>
-            </a>
-          </div>
-        </nav>
-
-        <!-- Sidebar Footer -->
-        <div class="sidebar-footer">
-          <a href="#" class="nav-item" data-tooltip="Mi Perfil">
-            <i class="fas fa-user-circle nav-icon"></i>
-            <span class="nav-text">Mi Perfil</span>
-          </a>
-          <a
-            href="login.html"
-            class="nav-item logout"
-            data-tooltip="Cerrar sesión"
-          >
-            <i class="fas fa-sign-out-alt nav-icon"></i>
-            <span class="nav-text">Cerrar sesión</span>
-          </a>
-        </div>
-      </aside>
+@section('content')
 
       <!-- Main Content -->
-      <main class="main-content">
+      <div class="main-content">
         <!-- Page Header -->
         <div class="page-header">
           <div class="header-content">
-            <h1>Dashboard</h1>
-            <p>Resumen general del sistema</p>
+            
+            <div class="header-text">
+              <h1>Dashboard</h1>
+              <p>Resumen general del sistema</p>
+            </div>
           </div>
         </div>
 
@@ -130,7 +25,7 @@
             </div>
             <div class="kpi-content">
               <span class="kpi-value">1,248</span>
-              <span class="kpi-label">Usuarios Totales</span>
+              <span class="kpi-label">Total Registros</span>
             </div>
           </div>
           <div class="kpi-card">
@@ -139,7 +34,7 @@
             </div>
             <div class="kpi-content">
               <span class="kpi-value">347</span>
-              <span class="kpi-label">Facturas Activas</span>
+              <span class="kpi-label">Activos</span>
             </div>
           </div>
           <div class="kpi-card">
@@ -148,7 +43,7 @@
             </div>
             <div class="kpi-content">
               <span class="kpi-value">89</span>
-              <span class="kpi-label">Reportes Generados</span>
+              <span class="kpi-label">Procesados</span>
             </div>
           </div>
           <div class="kpi-card">
@@ -157,7 +52,7 @@
             </div>
             <div class="kpi-content">
               <span class="kpi-value">24</span>
-              <span class="kpi-label">Sesiones Activas</span>
+              <span class="kpi-label">Pendientes</span>
             </div>
           </div>
         </div>
@@ -178,23 +73,21 @@
             </div>
             <div class="card-body">
               <div class="chart-placeholder">
-                <div class="chart-bars">
-                  <div class="chart-bar" style="height: 60%">
+                <div class="chart-container">
+                  <div class="chart-bars">
+                    <div class="chart-bar" style="height: 60%"></div>
+                    <div class="chart-bar" style="height: 80%"></div>
+                    <div class="chart-bar" style="height: 45%"></div>
+                    <div class="chart-bar" style="height: 90%"></div>
+                    <div class="chart-bar" style="height: 70%"></div>
+                    <div class="chart-bar" style="height: 85%"></div>
+                  </div>
+                  <div class="chart-labels">
                     <span>Ene</span>
-                  </div>
-                  <div class="chart-bar" style="height: 80%">
                     <span>Feb</span>
-                  </div>
-                  <div class="chart-bar" style="height: 45%">
                     <span>Mar</span>
-                  </div>
-                  <div class="chart-bar" style="height: 90%">
                     <span>Abr</span>
-                  </div>
-                  <div class="chart-bar" style="height: 70%">
                     <span>May</span>
-                  </div>
-                  <div class="chart-bar" style="height: 85%">
                     <span>Jun</span>
                   </div>
                 </div>
@@ -484,13 +377,6 @@
           </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="dashboard-footer">
-          <p>
-            Copyright &copy; 2026 G.A.M.A Solutions. Todos los derechos
-            reservados.
-          </p>
-        </footer>
       </main>
     </div>
 
@@ -522,37 +408,6 @@
     </div>
 
     <script>
-      // Sidebar Toggle
-      const sidebar = document.getElementById("sidebar");
-      const sidebarToggle = document.getElementById("sidebarToggle");
-      const sidebarOverlay = document.getElementById("sidebarOverlay");
-      const mobileMenuToggle = document.getElementById("mobileMenuToggle");
-
-      sidebarToggle.addEventListener("click", () => {
-        sidebar.classList.toggle("collapsed");
-        const icon = sidebarToggle.querySelector("i");
-        if (sidebar.classList.contains("collapsed")) {
-          icon.classList.remove("fa-chevron-left");
-          icon.classList.add("fa-chevron-right");
-        } else {
-          icon.classList.remove("fa-chevron-right");
-          icon.classList.add("fa-chevron-left");
-        }
-      });
-
-      // Mobile menu toggle
-      mobileMenuToggle.addEventListener("click", () => {
-        sidebar.classList.toggle("active");
-        sidebarOverlay.classList.toggle("active");
-        mobileMenuToggle.classList.toggle("active");
-      });
-
-      sidebarOverlay.addEventListener("click", () => {
-        sidebar.classList.remove("active");
-        sidebarOverlay.classList.remove("active");
-        mobileMenuToggle.classList.remove("active");
-      });
-
       // Modal functions
       function openModal() {
         document.getElementById("modalOverlay").classList.add("active");
@@ -757,5 +612,5 @@
         });
       });
     </script>
-  </body>
-</html>
+
+@endsection

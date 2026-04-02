@@ -1,59 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# InterfazBase - G.A.M.A. SOLUTIONS (Web: Laravel)
+<img width="1891" height="870" alt="image" src="https://github.com/user-attachments/assets/b50e0800-2acc-46df-a88b-11545f24b69e" />
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Descripción General
+**InterfazBase** es el núcleo visual y estructural para el desarrollo de aplicaciones web dentro de GAMA Solutions. Este repositorio define un **framework interno basado en Laravel** que estandariza la construcción de interfaces, promoviendo:
+- Consistencia visual  
+- Reutilización de componentes  
+- Escalabilidad de proyectos  
+- Rapidez en el desarrollo  
 
-## About Laravel
+Está diseñado para servir como base en múltiples sistemas empresariales bajo una misma identidad de marca.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Equipo Responsable
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Sólo el Líder del Departamento y Desarrollador UX/UI tiene permitido hacer cambios en el proyecto. Queda prohibido cualquier responsable no mencionado realice modificaciones a este repositorio
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Líder de Desarrollo Web:** Rubén Alejandro Nolasco Ruiz  
+- **Desarrollador UX/UI:** Diego Miguel Hernández Fabela  
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## Objetivo del Proyecto
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Establecer una base sólida para el desarrollo de aplicaciones web que soporten distintas soluciones:
 
-## Laravel Sponsors
+- **Proyecto A: Sistema de Control de Aulas e Itinerarios Institucionales.**
+- **Proyecto B: Plataforma SaaS de Gestión de Asistencias y Cumplimiento Académico.S)**
+- **Proyecto C: Sistema de Control de Accesos y Registro de Visitantes.**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Todo bajo una arquitectura unificada y reutilizable.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## Stack Tecnológico (Web)
 
-## Contributing
+- **Backend:** Laravel (API + Web)  
+- **Frontend:** Blade + Vue.js  
+- **Estilos:** CSS basado en Design System GAMA  
+- **Autenticación:** JWT (integración con servicios externos)  
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Design System
 
-## Code of Conduct
+### Tipografía
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| Elemento | Tamaño | Peso | Uso |
+|----------|--------|------|-----|
+| H1       | 32px   | Bold | Encabezados principales |
+| Body     | 16px   | Regular | Texto general |
+| Labels   | 16px   | Medium | Formularios |
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Paleta de Colores
 
-## License
+| Nombre | Código | Uso |
+|--------|--------|-----|
+| Deep Corporate Blue | `#134474` | Sidebar, Navbar, botones principales |
+| GAMA Orange | `#F28B2C` | Alertas, KPIs, indicadores |
+| Ice Blue | `#F2F7FB` | Fondo de cards y tablas |
+| Royal Blue | Variable | Estados secundarios / focus |
+| Error Red | `#FF0000` | Validaciones y acciones críticas |
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## ⚙️ Instalación
+
+```bash
+# Clonar repositorio
+git clone https://github.com/tu-repo/interfazbase.git
+
+# Entrar al proyecto
+cd interfazbase
+
+# Instalar dependencias
+composer install
+npm install
+
+# Configurar entorno
+cp .env.example .env
+php artisan key:generate
+
+# Ejecutar migraciones
+php artisan migrate
+
+# Levantar servidor
+php artisan serve
+

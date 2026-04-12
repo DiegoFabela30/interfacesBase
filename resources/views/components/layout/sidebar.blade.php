@@ -1,4 +1,27 @@
-      <!-- Mobile Menu Toggle -->
+{{--
+/**
+ * G.A.M.A. SOLUTIONS S.A. de C.V.
+ * "El factor de cambio en tu tecnología"
+ *
+ * @descripcion     Vista de Sidebar y Toggle móvil
+ * @autor           Rubén Alejandro Nolasco Ruiz
+ * @autorizador     Rubén Alejandro Nolasco Ruiz
+ * @prueba          Diego Miguel Hernandez Fabela  
+ * @mantenimiento   Ghael Garcia Manjarrez 
+ * @version       0.1.0
+ * @creado        11/04/2026
+ * @modificado    11/04/2026
+ *
+ * @cambios
+ * Fecha       | Autor             | Descripción
+ * ------------|-------------------|------------------------------------------
+ * 03/04/2026  | Rubén Alejandro   | Implementación inicial de Sidebar y Toggle móvil.
+ * 11/04/2026  | Rubén Alejandro   | Ajuste de estructura de prólogo según manual GAMA-MPL-03.
+ */
+--}}     
+     
+     
+     <!-- Mobile Menu Toggle -->
       <button class="mobile-menu-toggle" id="mobileMenuToggle">
         <div class="hamburger">
           <span></span>

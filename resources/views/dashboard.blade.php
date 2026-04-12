@@ -1,3 +1,25 @@
+{{--
+/**
+ * G.A.M.A. SOLUTIONS S.A. de C.V.
+ * "El factor de cambio en tu tecnología"
+ *
+ * @descripcion    Vista principal del Dashboard con KPIs, gráficas y filtrado dinámico.
+ * @autor          Rubén Alejandro Nolasco Ruiz
+ * @autorizador    Rubén Alejandro Nolasco Ruiz
+ * @prueba         Diego Miguel Hernandez Fabela  
+ * @mantenimiento  Ghael Garcia Manjarrez 
+ * @version        1.0.0
+ * @creado         11/04/2026
+ * @modificado     11/04/2026
+ *
+ * @cambios
+ * Fecha       | Autor             | Descripción
+ * ------------|-------------------|------------------------------------------
+ * 11/04/2026  | Rubén Alejandro   | Implementación inicial de Dashboard: KPIs, Gráficas y Filtros.
+ * 11/04/2026  | Rubén Alejandro   | Estandarización de prólogo según manual GAMA-MPL-03.
+ */
+--}}
+
 @extends('layouts.app')
 
 @section('title', 'Dashboard - GAMA Solutions')

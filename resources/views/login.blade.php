@@ -1,3 +1,25 @@
+{{--
+/**
+ * G.A.M.A. SOLUTIONS S.A. de C.V.
+ * "El factor de cambio en tu tecnología"
+ *
+ * @descripcion    Interfaz de autenticación dual (Login y Registro) con validación de fuerza de contraseña.
+ * @autor          Rubén Alejandro Nolasco Ruiz
+ * @autorizador    Rubén Alejandro Nolasco Ruiz
+ * @prueba         Diego Miguel Hernandez Fabela  
+ * @mantenimiento  Ghael Garcia Manjarrez 
+ * @version        1.0.0
+ * @creado         11/04/2026
+ * @modificado     11/04/2026
+ *
+ * @cambios
+ * Fecha       | Autor             | Descripción
+ * ------------|-------------------|------------------------------------------
+ * 11/04/2026  | Rubén Alejandro   | Implementación de vista de Login/Registro con validaciones JS.
+ * 11/04/2026  | Rubén Alejandro   | Estandarización de prólogo según manual GAMA-MPL-03.
+ */
+--}}
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
